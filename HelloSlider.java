@@ -11,8 +11,11 @@ public class HelloSlider extends Application {
         stage.setScene(scene);
         stage.setTitle("Slider Sample");
 
-        //Slider slider = new Slider(0, 1, 0.5);
         Slider slider = new Slider(0, 100, 50);
+        slider.setShowTickMarks(true);
+        slider.setShowTickLabels(true);
+        slider.setMajorTickUnit(10f);
+        slider.setBlockIncrement(1f);
         root.getChildren().add(slider);
 
         stage.show();
